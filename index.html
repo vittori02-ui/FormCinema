@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="icon" type="imag/x-icon" href="F.png">
+        <title>CINEMA</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stile.css">
+        <body>
+            <form>
+            <fieldset>
+                <legend><h2>PRENOTA</h2></legend>
+                <label for="fname">NOME</label>
+                <input type="text" id="fname"><br><br>
+                <label for="fname">COGNOME</label>
+                <input type="text" id="sname"><br><br>
+                <label for="scelta">Scegli la sala:</label>
+                <ul>
+                    <label for="std">Sala standard 8€</label>
+                    <input type="radio" id="std" name="sala" value="8">
+                    <label for="imx">Sala Imax 12€</label>
+                    <input type="radio" id="imx" name="sala" value="12"><br>
+                    <label for="vip">Sala VIP 18€</label>
+                    <input type="radio" id="vip" name="sala" value="18">
+                </ul>
+                
+                <label for="num">Scegli quanti biglietti</label>
+                <input type="number" id="num" min="1"><br><br>
+                <label for="card">Carta fedeltà (Se si hai 5€ di sconto)</label>
+                <input type="checkbox" id="card"><br><br>
+                <label for="extra">SERVIZI EXTRA:</label>
+                <ul>
+                    <label for="pop">Pop corn 2.50€</label>
+                    <input type="checkbox" id="pop" name="extra" value="2.50"><br>
+                    <label for="bib">Bibita 1.50€</label>
+                    <input type="checkbox" id="bib" name="extra" value="1.50">
+                    <label for="nac">Nachos 2.00€</label>
+                    <input type="checkbox" id="nac" name="extra" value="2.00">
+                </ul>
+                <button type="button" onclick="scelta()">PRENOTA</button>
+                <input type="reset" id="rese" value="RESET" onclick="reset()">
+
+            </fieldset>
+        </form>
+        <div id="box">RIEPILOGO</div>
+    </body>
+        </body>
+    </head>
+</html>
